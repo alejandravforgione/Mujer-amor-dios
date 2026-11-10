@@ -2,9 +2,9 @@ const CANVAS_WIDTH = 1080;
 const CANVAS_HEIGHT = 1920;
 
 const LINKS = {
-  asistencia: '#',
-  youtube: '#',
-  instagram: '#',
+  asistencia: 'https://wa.me/qr/VCUGSED5PPVJK1',
+  youtube: 'https://youtube.com/@mujeramordios?si=sPTIOq2m5Xluvvqt',
+  instagram: 'https://www.instagram.com/mujeramorydios?psln=MTc5NmZhcGJ5bWZiNg%3D%3D&utm_source=qr',
 };
 
 type InvitationLayer = {
