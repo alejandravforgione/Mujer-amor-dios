@@ -47,7 +47,7 @@ function InvitationLayerView({ layer }: { layer: InvitationLayer }) {
     height: toPercent(layer.h, CANVAS_HEIGHT),
   };
 
-    const image = (
+  const image = (
     <img
       src={layer.src}
       alt={layer.alt}
@@ -58,13 +58,13 @@ function InvitationLayerView({ layer }: { layer: InvitationLayer }) {
   );
 
   return (
-    <div className="relative col-start-1 row-start-1">
+    <div className="pointer-events-none relative col-start-1 row-start-1">
       {layer.href ? (
         <a
           href={layer.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group absolute block rounded-full transition-transform duration-300 ease-out hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 motion-reduce:transition-none"
+          className="pointer-events-auto group absolute block rounded-full transition-transform duration-300 ease-out hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 motion-reduce:transition-none"
           style={box}
         >
           {image}
@@ -73,7 +73,7 @@ function InvitationLayerView({ layer }: { layer: InvitationLayer }) {
           </span>
         </a>
       ) : (
-        <div className="pointer-events-none absolute" style={box}>
+        <div className="absolute" style={box}>
           {image}
         </div>
       )}
